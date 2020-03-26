@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>背景属性训练</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url(./mytag.png) -400px -30px no-repeat;
+        }
+        div.top {
+            background-position-x: -640px;
+        }
+        div.left {
+            background-position-x: -480px;
+        }
+        div.right {
+            background-position-x: -560px;
+        }
+        div.top:hover {
+            background-position-x: -680px;
+        }
+        div.bottom:hover {
+            background-position-x: -440px;
+        }
+        div.left:hover {
+            background-position-x: -520px;
+        }
+        div.right:hover {
+            background-position-x: -600px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="left"></div>
+    <div class="right"></div>    
+</body>
+</html>

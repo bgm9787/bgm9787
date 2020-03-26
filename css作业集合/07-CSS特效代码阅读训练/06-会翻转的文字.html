@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			font:80px "微软雅黑"; 
+			padding: 200px;
+		}
+		.zhi{
+			margin:20px;
+			color:#369;
+			position:relative;
+		}
+		.zhi:before,.zhi:after{
+			content:attr(data-zhi);
+			position: absolute;
+			top:0;
+			left:0;
+			transform-origin:left top;
+			/* 为了兼容不同浏览器  */
+			-webkit-transform-origin:left top; /* Safari 和 Chrome */
+			-o-transform-origin:left top; /* Opera */
+			-ms-transform-origin:left top;
+			/* transition: property duration timing-function delay; */
+			transition:all 0.3s ease 0s;
+
+		}
+		.zhi:before{
+			color:#fff;
+			/* 设置层级,元素的堆叠顺序。*/
+			z-index: 3; 
+			transform:rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+		}
+		.zhi:after{
+			color:rgba(0,0,0,0.2);
+			/* scale(1.1,1) 定义 2D 缩放转换。 */
+			transform:scale(1.1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			z-index:2;
+		}
+		.zhi:hover:before{
+			color:#fafafa;
+			transform:rotateX(0deg) rotateY(-40deg) rotateZ(0deg) skew(0deg,1deg);
+		}
+		.zhi:hover:after{
+			transform:scale(1.1,1) rotateX(0deg) rotateY(-40deg) rotateZ(0deg) skew(0deg,20deg);
+		}
+	</style>
+
+</head>
+<body>
+	<span class="zhi" data-zhi="前">前</span>
+	<span class="zhi" data-zhi="端">端</span>
+	<span class="zhi" data-zhi="全">全</span>
+	<span class="zhi" data-zhi="栈">栈</span>
+</body>
+</html>

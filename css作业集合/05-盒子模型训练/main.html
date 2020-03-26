@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子模型训练</title>
+    <style>
+        /* body {
+            padding: 0px;
+            margin: 0px;
+        } */
+        .main {
+            width: 500px;
+            /* height: 400px; */
+            background: url(bg.gif);
+            border: 1px solid green;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        h2 {
+            font-size: 30px;
+            height: 40px;
+            line-height: 40px;
+            color: #eee;
+            margin: 0px;
+            padding-left: 10px;
+            border-left: 5px solid rgb(206, 224, 87);
+        }
+        ul {
+            width: 470px;
+            /* height: 300px; */
+            background-color: #fff;
+            list-style: none;
+            padding: 0px;
+        }
+        
+        li span {
+            background: url(tb.gif) 10px 10px no-repeat;
+            background-size: 20px;
+            display: inline-block;
+            width: 30px;
+            height: 28px;
+            vertical-align: center;
+            /* margin: 5px 10px; */
+        }
+        li {
+            height: 40px;
+            line-height: 40px;
+            /* background-color: #333; */
+            border-bottom: 1px dashed #bbb;
+            padding: 3px;
+            font-size: 18px;
+            color: rgb(60, 106, 192);
+        }
+        li:nth-last-child() {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>新闻列表</h2>
+        <div>
+            <ul>
+                <li>
+                    <span></span>
+                    钟南山曾购无座车票赴武汉
+                </li>
+                <li>
+                    <span></span>
+                    多辆湖北复工大巴被劝返
+                </li>
+                <li>
+                    <span></span>
+                    耿爽说没收到美国所谓1亿援助新
+                </li>
+                <li>
+                    <span></span>
+                    会上晕倒的荷兰卫生部长辞职了
+                </li>
+                <li>
+                    <span></span>
+                    未发现复阳病例再传播报告
+                </li>
+                <li>
+                    <span></span>
+                    李国庆反对给抗疫医护子女加分
+                </li>
+                <li>
+                    <span></span>
+                    钟南山曾购无座车票赴武汉
+                </li>
+                <li>
+                    <span></span>
+                    钟南山曾购无座车票赴武汉
+                </li>
+            </ul>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
